@@ -22,7 +22,7 @@ public_file=/www/server/panel/install/public.sh
 if [ ! -f $public_file ];then
 	wget -O $public_file http://download.bt.cn/install/public.sh -T 5;
 fi
-. $public_file
+。 $public_file
 
 download_Url=$NODE_URL
 btpanel_Url=
@@ -58,7 +58,7 @@ if [ "$version" = '' ];then
 	echo '版本号获取失败,请手动在第一个参数传入!';
 	exit;
 fi
-wget --no-check-certificate -T 5 -O panel.zip https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/LinuxPanel-5.9.1_pro.zip
+wget --no-check-certificate -T 5 -O panel.zip https://cdn.jsdelivr.net/gh/Jiaocha/bt59happy@master/LinuxPanel-5.9.1_pro.zip
 if [ ! -f "panel.zip" ];then
 	echo "获取更新包失败，请稍后更新或联系宝塔运维"
 	exit;

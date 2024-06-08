@@ -93,7 +93,7 @@ echo '---------------------------------------------';
 echo "Selected download node...";
 get_node_url
 download_Url=$NODE_URL
-btpanel_Url=https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/panel.zip
+btpanel_Url=https://cdn.jsdelivr.net/gh/Jiaocha/bt59happy@master/panel.zip
 echo "Download node: $download_Url";
 echo '---------------------------------------------';
 setup_path=/www
